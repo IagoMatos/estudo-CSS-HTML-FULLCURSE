@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>images and text boxex</title>
+    <title>images and text boxes</title>
     <style>
 
         *{
@@ -31,22 +31,36 @@
            border-radius: 50% ; 
         }
 
-        .textbar{
-
-        }
-
         #text1{
+            display: block;
             padding: 10px;
             border: solid 1px;
             border-radius: 5px;
+            margin: 20px auto 20px auto;
+        }
+
+        div#google{
+            height: 150px;
+            width: 300px;
+            padding: 20px;
+            margin: 50px auto 50px auto;
+        }
+        div#google > #google-logo{
+            display: block;
+            height: 60px;
+            width: 100;
+            margin: auto;
+            padding: 20px;
         }
 
         #text2{
+            display: block;
             padding: 10px;
-            border-radius: 25px;
+            border-radius: 30px;
             border: none;
-            box-shadow: rgba(0, 0, 0, 0.329) 1px 1px 7px ;
-            width: 300px;
+            box-shadow: rgba(0, 0, 0, 0.486) 1px 1px 7px ;
+            width: 90%;
+            margin: auto;
         }
 
         #text2:focus{
@@ -55,12 +69,14 @@
 
         #div1{
             display: block;
+            padding: 20px;
+            margin: 50px;
             height: 130px;
             width: 330px;
+            margin: 50px auto 50px auto;
         }
         
         #div1 > h1{
-            display: block;
             margin: 5px 0px 5px 0px;
         }
 
@@ -76,6 +92,11 @@
             margin: auto;
             width: 95%;
             height: 20px;
+            padding-left: 5px;
+        }
+        
+        #div1 > #text3:focus{
+            outline: none;
         }
 
         #div1 > p{
@@ -101,34 +122,38 @@
         }
 
         #div2{
-            height: 40px;
-            width: 300px;
             display: block;
+            width: 450px;
+            margin: 50px auto 50px auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.404);
+            padding: 12px;
         }
 
-        #div2 > img{
-            width: 30px;
-            height: 30px;
+        #div2  img{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             vertical-align: middle;
             object-fit: cover;
-            padding: 5px;
+            margin-right:5px;
         }
 
         #div2 > #text4{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
             font-weight: 600;
             vertical-align: middle;
             border: none;
-            margin: auto;
+            width: 300px;
         }
 
         #div2 > button{
-            height: 25px;
-            width: 55px;
             background-color: dodgerblue;
+            padding: 8px 16px;
             color: white;
-            border-radius: 15px;
+            border-radius: 30px;
             border: none;
         }
         
@@ -148,7 +173,11 @@
     <img id="img3" class="img" src="images/cat.jpg" alt="">
 
     <input id="text1" class="textbar" type="text" placeholder="Search" >
-    <input id="text2" class="textbar" type="text" placeholder="Search Google or Type URL" >
+
+    <div id="google">
+        <img id="google-logo" src="images/Google_2015_logo.svg.png" alt="">
+        <input id="text2" class="textbar" type="text" placeholder="Search Google or Type URL" >
+    </div>
 
     <div id="div1">
         <h1>Email</h1>
