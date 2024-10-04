@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images and text boxex</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 20px;
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+            object-fit:cover;
+        }
+
+        #img1{
+            border-radius: 20px;
+        }
+
+        #img2{
+            width: 200px;
+        }
+
+        #img3{
+           border-radius: 50% ; 
+        }
+
+        .textbar{
+
+        }
+
+        #text1{
+            padding: 10px;
+            border: solid 1px;
+            border-radius: 5px;
+        }
+
+        #text2{
+            padding: 10px;
+            border-radius: 25px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.329) 1px 1px 7px ;
+            width: 300px;
+        }
+
+        #text2:focus{
+            outline: none;
+        }
+
+        #div1{
+            display: block;
+            height: 130px;
+            width: 330px;
+        }
+        
+        #div1 > h1{
+            display: block;
+            margin: 5px 0px 5px 0px;
+        }
+
+        #div1 > h1 , p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.8em;
+            font-weight: 400;
+            padding-inline: 5px;
+        }
+
+        #div1 > #text3 {
+            display: block;
+            margin: auto;
+            width: 95%;
+            height: 20px;
+        }
+
+        #div1 > p{
+            margin: 10px 0px 10px 0px;
+        }
+
+        #div1 > button {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            display: block;
+            background-color: hsl(210, 100%, 36%);
+            color: #fff;
+            height: 35px;
+            width:96%;
+            border: none;
+            border-radius: 50px;
+            margin: auto;
+
+        }
+
+        #div1 > button:hover{
+            background-color: hsl(210, 100%, 26%);
+        }
+
+        #div2{
+            height: 40px;
+            width: 300px;
+            display: block;
+        }
+
+        #div2 > img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            vertical-align: middle;
+            object-fit: cover;
+            padding: 5px;
+        }
+
+        #div2 > #text4{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            vertical-align: middle;
+            border: none;
+            margin: auto;
+        }
+
+        #div2 > button{
+            height: 25px;
+            width: 55px;
+            background-color: dodgerblue;
+            color: white;
+            border-radius: 15px;
+            border: none;
+        }
+        
+        #div2 > button:hover{
+            background-color: hsl(210, 100%, 36%);
+        }
+
+        #text4:focus{
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="img1" class="img" src="images/cat.jpg" alt="">
+    <img id="img2" class="img" src="images/cat.jpg" alt="">
+    <img id="img3" class="img" src="images/cat.jpg" alt="">
+
+    <input id="text1" class="textbar" type="text" placeholder="Search" >
+    <input id="text2" class="textbar" type="text" placeholder="Search Google or Type URL" >
+
+    <div id="div1">
+        <h1>Email</h1>
+        <input id="text3" class="textbar" type="email">
+        <p>By clicking Agree & Join, you agree to the Privacy Policy.</p>
+        <button>Agree & Join</button>
+    </div>
+    <br>
+    <div id="div2">
+        <img src="images/cat.jpg" alt="">
+        <input id="text4" class="textbar" type="text" placeholder="What's happening?" >
+        <button>tweet</button>
+    </div>
+</html>
