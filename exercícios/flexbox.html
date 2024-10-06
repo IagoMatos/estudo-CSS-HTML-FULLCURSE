@@ -4,8 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning flexbox</title>
+
+    <style>
+
+        div{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1em;
+            font-weight: 700;
+        }
+
+        .box{
+            border: solid 1px rgb(189, 189, 189);
+            border-radius: 6px;
+            padding: 0;
+        }
+
+
+
+        .flexbox{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-block: 6px ;
+            padding-inline: 12px;
+        }
+
+        .pop-up >button{
+            background-color: dodgerblue;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 12px;
+            border: none;
+            padding: 3px 10px ;
+        }
+
+        .pop-up button:hover{
+            background-color: hsl(210, 100%, 46%);
+        }
+        
+        .flexbox2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            background-color: mediumslateblue;
+            margin: 10px;
+            height: 40px;
+            
+        }
+
+        .home{
+            margin-inline: 10px;
+            color: #fff;
+        }
+
+        .search-button > input{
+            width: 500px;
+            height: 20px;
+            border: none;
+            padding:3px 15px ;
+            border-radius: 20px;
+            margin-inline: 10px;
+        }
+
+        .download-button > button{
+            margin-inline: 10px;
+            padding: 6px 10px;
+            background-color: transparent;
+            border: solid 1px #fff;
+            border-radius: 2px;
+            color: #fff;
+            font-size: 0.8em;
+            font-weight: 700;
+        }
+
+
+    </style>
+
 </head>
 <body>
-    
+    <div class="box">
+        <div class="flexbox">
+            <div>
+                Home
+            </div>
+            <div class="pop-up">
+                <button>14</button>
+            </div>
+        </div>
+        <div class="flexbox">
+            <div>
+                Notifications
+            </div>
+            <div class="pop-up">
+                <button>3</button>
+            </div>
+        </div>
+        <div class="flexbox">
+            <div>
+                Messages
+            </div>
+            <div class="pop-up">
+                <button>5</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flexbox2">
+        <div class="home">Home</div>
+        <div class="search-button"><input type="text" placeholder="search"></div>
+        <div class="download-button"> <button>Download</button></div>
+    </div>
 </body>
 </html>
