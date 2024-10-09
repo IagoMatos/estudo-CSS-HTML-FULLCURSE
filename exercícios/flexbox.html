@@ -4,85 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning flexbox</title>
-
-    <style>
-
-        div{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1em;
-            font-weight: 700;
-        }
-
-        .box{
-            border: solid 1px rgb(189, 189, 189);
-            border-radius: 6px;
-            padding: 0;
-        }
-
-
-
-        .flexbox{
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-block: 6px ;
-            padding-inline: 12px;
-        }
-
-        .pop-up >button{
-            background-color: dodgerblue;
-            color: #fff;
-            font-weight: bold;
-            border-radius: 12px;
-            border: none;
-            padding: 3px 10px ;
-        }
-
-        .pop-up button:hover{
-            background-color: hsl(210, 100%, 46%);
-        }
-        
-        .flexbox2{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-
-            background-color: mediumslateblue;
-            margin: 10px;
-            height: 40px;
-            
-        }
-
-        .home{
-            margin-inline: 10px;
-            color: #fff;
-        }
-
-        .search-button > input{
-            width: 500px;
-            height: 20px;
-            border: none;
-            padding:3px 15px ;
-            border-radius: 20px;
-            margin-inline: 10px;
-        }
-
-        .download-button > button{
-            margin-inline: 10px;
-            padding: 6px 10px;
-            background-color: transparent;
-            border: solid 1px #fff;
-            border-radius: 2px;
-            color: #fff;
-            font-size: 0.8em;
-            font-weight: 700;
-        }
-
-
-    </style>
-
+    <link rel="stylesheet" href="exercise.style.css">
 </head>
 <body>
     <div class="box">
@@ -118,5 +40,27 @@
         <div class="search-button"><input type="text" placeholder="search"></div>
         <div class="download-button"> <button>Download</button></div>
     </div>
+
+    <div class="container">
+        <div class="inbox-label">ALL INBOXES</div>
+        <div class="email">
+          <div class="sender-picture-container">
+            <img class="sender-picture" src="images/cat.jpg">
+          </div>
+          <div class="email-content">
+            <div class="email-header">
+              <div class="sender-name">Chewy Promotions</div>
+              <div class="send-time">4:58 PM</div>
+            </div>
+            <div class="subject">
+              Biggest sales of the year!
+            </div>
+            <div class="message">
+              Hey there! We're writing to tell you about our...
+            </div>
+          </div>
+        </div>
+      </div>
+
 </body>
 </html>
