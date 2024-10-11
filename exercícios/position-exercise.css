@@ -28,6 +28,11 @@ div{
     object-fit: cover;
 }
 
+.profile-picture:hover{
+    cursor: pointer;
+    
+}
+
 .sidebar-2{
 
     position: fixed;
@@ -60,6 +65,11 @@ padding-top: 10px;
     color: gray;
     font-size: 1.5em;
     }
+
+.submenu2,.channel-topics > p:hover{
+    color: hsl(0, 0%, 70%);
+    cursor: pointer;
+}
 
 .channel-topics{
     display: flex;
